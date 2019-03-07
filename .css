@@ -1,0 +1,25 @@
+
+                     @media (min-width: 768px) {
+                     <b:eval expr='&quot;#snippet_thumbnail_id_&quot; + data:post.id'/>
+                     {
+                     background-image: url(
+                     <b:eval expr='resizeImage(data:post.firstImageUrl, 280).cssEscaped'/>
+                     );
+                     }
+                     }
+                     @media (min-width: 600px) {
+                     <b:eval expr='&quot;#snippet_thumbnail_id_&quot; + data:post.id'/>
+                     {
+                     background-image: url(
+                     <b:eval expr='resizeImage(data:post.firstImageUrl, 640).cssEscaped'/>
+                     );
+                     }
+                     }
+                     @media (max-width: 480px) {
+                     <b:eval expr='&quot;#snippet_thumbnail_id_&quot; + data:post.id'/>
+                     {
+                     background-image: url(
+                     <b:eval expr='resizeImage(data:post.firstImageUrl, 480).cssEscaped'/>
+                     );
+                     }
+                     }
